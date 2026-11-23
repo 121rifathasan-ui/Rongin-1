@@ -1,0 +1,6 @@
+{
+  "name": "Rongin app",
+  "description": "Rongin app - Watch, create, and share trending short videos, live stream, and connect with Bangladeshi creators.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
