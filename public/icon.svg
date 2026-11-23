@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#0B0B12"/>
+      <stop offset="100%" stopColor="#000000"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#25F4EE"/>
+      <stop offset="50%" stopColor="#FE2C55"/>
+      <stop offset="100%" stopColor="#FFB800"/>
+    </linearGradient>
+    <linearGradient id="rGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#25F4EE"/>
+      <stop offset="45%" stopColor="#FE2C55"/>
+      <stop offset="100%" stopColor="#FFB800"/>
+    </linearGradient>
+    <linearGradient id="rGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stopColor="#FF007A"/>
+      <stop offset="60%" stopColor="#8B5CF6"/>
+      <stop offset="100%" stopColor="#25F4EE"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#FE2C55" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect x="8" y="8" width="496" height="496" rx="120" fill="none" stroke="url(#borderGrad)" stroke-width="12"/>
+
+  <!-- Prismatic Glowing 'R' for Rongin -->
+  <g transform="translate(100, 90) scale(3.2)" filter="url(#glow)">
+    <!-- Vertical stem -->
+    <rect x="18" y="16" width="16" height="68" rx="8" fill="url(#rGrad1)"/>
+    <!-- Loop -->
+    <path d="M34 16H58C72 16 82 26 82 40C82 54 72 64 58 64H34V16Z" fill="url(#rGrad2)"/>
+    <path d="M34 30H56C62 30 66 34 66 40C66 46 62 50 56 50H34V30Z" fill="#0B0B12"/>
+    <!-- Leg -->
+    <path d="M50 54L76 84H60L36 56H50Z" fill="url(#rGrad1)"/>
+    <!-- Accent Sparkle -->
+    <circle cx="82" cy="20" r="5" fill="#25F4EE"/>
+  </g>
+</svg>
